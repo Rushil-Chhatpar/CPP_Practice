@@ -15,3 +15,5 @@
 #include <limits>
 #include <stdexcept>
 #include <algorithm>
+#include <climits>
+#include <unordered_map>
