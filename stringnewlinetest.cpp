@@ -1,5 +1,16 @@
 #include "headers.h"
 
+class A
+{
+    public:
+    int value() { return 1;}
+};
+class B : public A
+{
+    public:
+    int value() { return 2;}
+};
+
 int main()
 {
     std::string s = "Hello\nWorld";
@@ -19,5 +30,9 @@ World)";
         result += word + nl;
     }
     std::cout <<"result: " <<std::endl <<result << std::endl;
+
+    A* obj = new B();
+    int val = obj->value();
+
     return 0;
 }
